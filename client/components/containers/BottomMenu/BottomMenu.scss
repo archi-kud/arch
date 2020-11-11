@@ -1,0 +1,40 @@
+.BottomMenu {
+    $root: &;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: var(--bottom-menu-height);
+    max-width: var(--app-width);
+    background-color: var(--grey-color);
+
+    &__nav {
+        height: 100%;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 100%;
+    }
+
+    &__link {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        -webkit-tap-highlight-color: transparent;
+
+        &--active {
+            #{$root}__icon {
+                fill: var(--orange-color);
+            }
+        }
+    }
+
+    &__icon {
+        transition: fill var(--animation-time);
+        transform: scale(1.1666);
+    }
+}

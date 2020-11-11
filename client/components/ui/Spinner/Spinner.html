@@ -1,0 +1,39 @@
+<template>
+    <style>
+        :host {
+            width: 50px;
+            height: 50px;
+        }
+
+        .Spinner {
+            width: 100%;
+            height: 100%;
+            animation: spinnerRotate 0.8s linear infinite;
+            transform-origin: center center;
+        }
+
+        .Spinner__path {
+            stroke: var(--orange-color);
+            stroke-width: 3px;
+            stroke-miterlimit: 20px;
+            stroke-dasharray: 79, 200;
+            stroke-dashoffset: 0;
+        }
+
+        @keyframes spinnerRotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <svg class="Spinner" viewBox="25 25 50 50">
+        <circle
+            class="Spinner__path"
+            cx="50"
+            cy="50"
+            r="20"
+            fill="none"
+        />
+    </svg>
+</template>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+        <title>Arch</title>
+    </head>
+
+    <body>
+        <noscript>Включите JavaScript в настройках вашего браузера для корректной работы приложения.</noscript>
+
+        <div id="App">
+            <header class="Header" is="ctnr-header">
+                <ctnr-container>
+                    <div class="Header__content">
+                        <a href="/" is="ui-link">
+                            <ui-logo></ui-logo>
+                        </a>
+                        
+                        <ui-icon name="search"></ui-icon>
+                    </div>
+                </ctnr-container>
+            </header>
+
+            <ctnr-search>
+                <ul class="SearchList" is="ctnr-search-list"></ul>
+            </ctnr-search>
+
+            <main class="Layout" is="ctnr-layout">
+                <ui-layout-loader hide="true"></ui-layout-loader>
+                <div class="Layout__content"></div>
+            </main>
+
+            <div class="BottomMenu" is="ctnr-bottom-menu">
+                <nav class="BottomMenu__nav">
+                    <ul class="BottomMenu__list">
+                        <li class="BottomMenu__listItem">
+                            <a class="BottomMenu__link" href="/" is="ui-link">
+                                <ui-icon class="BottomMenu__icon" name="home"></ui-icon>
+                            </a>
+                        </li>
+
+                        <li class="BottomMenu__listItem">
+                            <a class="BottomMenu__link" href="/trending" is="ui-link">
+                                <ui-icon class="BottomMenu__icon" name="fire"></ui-icon>
+                            </a>
+                        </li>
+
+                        <li class="BottomMenu__listItem">
+                            <a class="BottomMenu__link" href="/library" is="ui-link">
+                                <ui-icon class="BottomMenu__icon" name="library"></ui-icon>
+                            </a>
+                        </li>
+
+                        <li class="BottomMenu__listItem">
+                            <a class="BottomMenu__link" href="/profile" is="ui-link">
+                                <ui-icon class="BottomMenu__icon" name="profile"></ui-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>

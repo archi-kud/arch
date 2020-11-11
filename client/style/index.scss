@@ -1,0 +1,41 @@
+@import 'variables/variables.scss';
+@import 'fonts/fonts.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111111;
+    /* overscroll-behavior-y: contain; */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#App {
+    width: 100%;
+    max-width: var(--app-width);
+    margin: 0 auto;
+    padding: var(--header-height) 0 var(--bottom-menu-height);
+}

@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "es2015",
+        "module": "esnext",
+        "moduleResolution": "Node",
+        "alwaysStrict": true,
+        "noEmitOnError": true,
+        "noUnusedLocals": true,
+        "removeComments": false,
+        "noImplicitAny": true,
+        "useDefineForClassFields": true,
+        "esModuleInterop": true,
+        "strict": true,
+        "paths": {
+            "@core/*": ["core/*"],
+            "@client/*": ["client/*"],
+            "@components/*": ["client/components/*"],
+            "@static/*": ["client/static/*"]
+        }
+    },
+
+    "include": ["./"],
+    "exclude": ["node_modules"]
+}

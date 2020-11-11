@@ -1,0 +1,44 @@
+<template>
+    <style>
+        :host {
+            height: var(--header-height);
+        }
+
+        .SearchHeader {
+            height: 100%;
+            background-color: var(--grey-color);
+        }
+
+        .SearchHeader__content {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            grid-gap: 0 10px;
+            align-items: center;
+            height: 100%;
+        }
+
+        .SearchHeader__input {
+            width: 100%;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+    </style>
+
+    <div class="SearchHeader">
+        <ctnr-container>
+            <div class="SearchHeader__content">
+                <ui-icon name="arrow"></ui-icon>
+    
+                <form class="SearchHeader__form">
+                    <input
+                        class="SearchHeader__input" 
+                        placeholder='Что опять тебе нужно?'
+                    />
+                </form>
+            </div>
+        </ctnr-container>
+    </div>
+</template>
